@@ -1936,3 +1936,62 @@ body {
 .footer__copyright-link:active {
   color: var(--basic-f-color);
 }
+
+/* toggle-color */
+
+.toggle-color {
+  position: absolute;
+  top: -244px;
+  right: 22px;
+  padding: 10px 20px 20px;
+  outline: 2px dotted #fff;
+  animation-name: flashing;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.toggle-color__title {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.toggle-color__inner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.toggle-color-btn {
+  padding: 10px;
+  font-family: 'montserrat';
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  border: 2px dotted #fff;
+  background: transparent;
+  cursor: pointer;
+}
+
+@keyframes flashing {
+  0% {
+    outline-color: #fff;
+  }
+
+  50% {
+    outline-color: transparent;
+  }
+
+  100% {
+    outline-color: #fff;
+  }
+}
+
+@media(max-width: ) {
+
+}
